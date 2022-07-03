@@ -1,0 +1,30 @@
+.sideMenus {
+    width: 100%;
+    height: 100%;
+    .menu {
+        width: 100%;
+        height: calc(100% - 80px);
+    }
+    .operation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 80px;
+        padding: 12px 0;
+        .icon {
+            width: 32px;
+            font-size: 16px;
+            cursor: pointer;
+            padding: 2px 0;
+            text-align: center;
+        }
+    }
+    .dark {
+        color: #fff;
+    }
+    :global {
+        .ant-main-menu-submenu-title {
+            padding: auto !important;
+        }
+    }
+}

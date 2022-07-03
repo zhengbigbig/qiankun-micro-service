@@ -1,0 +1,17 @@
+{
+  "name": "qiankun-micro-service",
+  "version": "1.0.0",
+  "description": "qiankun微服务",
+  "main": "index.js",
+  "author": "zhiheng",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start:react-app": "yarn && yarn workspace react-app start",
+    "build:react-app": "yarn &&  yarn workspace react-app build",
+    "update:core": "yarn workspaces run update:core"
+  }
+}
